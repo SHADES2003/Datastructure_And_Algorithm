@@ -31,8 +31,8 @@ void enqueue(struct queue *q,int val){
     }
     else {
         q->r++;
-        q->arr[q->r]=val;
-        printf("enqueue element is %d\n",q->arr[q->r]);
+        int a=q->arr[q->r]=val;
+        printf("enqueue element is %d\n",a);
     }
 }
 //dequeue
@@ -63,11 +63,11 @@ int main(){
     printf("after enqueue then we proceed dequeue\n");
     printf("dequeue element is %d\n",dequeue(q));
     printf("dequeue element is %d",dequeue(q));
-    if(isempty(q)){
-        printf("queue is empty\n");
-    }
-    if(isfull(q)){
-        printf("queue is full\n");
-    }
+    // if(isempty(q)){
+    //     printf("queue is empty\n");
+    // }
+    // if(isfull(q)){
+    //     printf("queue is full\n");
+    // }
     return 0;
 }
